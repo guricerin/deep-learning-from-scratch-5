@@ -12,6 +12,7 @@ norm_dist = "step01:norm_dist"
 norm_param = "step01:norm_param"
 sample_try = "step01:sample_try"
 sample_avg = "step01:sample_avg"
+sample_sum = "step01:sample_sum"
 
 [build-system]
 requires = ["hatchling"]
