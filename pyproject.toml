@@ -3,14 +3,13 @@ name = "deep-learning-from-scratch-5"
 version = "0.1.0"
 description = "Add your description here"
 authors = [{ name = "guricerin" }]
-dependencies = [
-    "numpy==1.24.2",
-]
+dependencies = ["numpy==1.24.2", "matplotlib==3.7.1"]
 readme = "README.md"
 requires-python = ">= 3.8"
 
 [project.scripts]
 hello = "step01:hello"
+norm_dist = "step01:norm_dist"
 
 [build-system]
 requires = ["hatchling"]
