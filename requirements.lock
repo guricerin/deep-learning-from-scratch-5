@@ -9,3 +9,5 @@
 #   generate-hashes: false
 
 -e file:.
+numpy==1.24.2
+    # via deep-learning-from-scratch-5

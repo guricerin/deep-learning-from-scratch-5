@@ -3,7 +3,9 @@ name = "deep-learning-from-scratch-5"
 version = "0.1.0"
 description = "Add your description here"
 authors = [{ name = "guricerin" }]
-dependencies = []
+dependencies = [
+    "numpy==1.24.2",
+]
 readme = "README.md"
 requires-python = ">= 3.8"
 
