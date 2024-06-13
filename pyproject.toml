@@ -7,11 +7,13 @@ readme = "README.md"
 requires-python = ">= 3.8"
 
 [project.scripts]
-norm_dist = "step01:norm_dist"
-norm_param = "step01:norm_param"
-sample_try = "step01:sample_try"
-sample_avg = "step01:sample_avg"
-sample_sum = "step01:sample_sum"
+
+[tool.rye.scripts]
+norm_dist = "python src/step01/norm_dist.py"
+norm_param = "python src/step01/norm_param.py"
+sample_try = "python src/step01/sample_try.py"
+sample_avg = "python src/step01/sample_avg.py"
+sample_sum = "python src/step01/sample_sum.py"
 
 [build-system]
 requires = ["hatchling"]
