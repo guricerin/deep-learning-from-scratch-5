@@ -2,7 +2,7 @@
 name = "deep-learning-from-scratch-5"
 version = "0.1.0"
 authors = [{ name = "guricerin" }]
-dependencies = ["numpy==1.24.2", "matplotlib==3.7.1"]
+dependencies = ["numpy==1.24.2", "matplotlib==3.7.1", "scipy==1.10.1"]
 readme = "README.md"
 requires-python = ">= 3.8"
 
@@ -14,6 +14,11 @@ norm_param = "python src/step01/norm_param.py"
 sample_try = "python src/step01/sample_try.py"
 sample_avg = "python src/step01/sample_avg.py"
 sample_sum = "python src/step01/sample_sum.py"
+
+hist = "python src/step02/hist.py"
+fit = "python src/step02/fit.py"
+generate = "python src/step02/generate.py"
+prob = "python src/step02/prob.py"
 
 [build-system]
 requires = ["hatchling"]
