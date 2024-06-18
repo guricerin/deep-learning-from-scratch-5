@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-
-from step01 import common
+from utils import utils
 
 
 def sample_sum(sample_size):
@@ -17,7 +16,7 @@ def sample_sum(sample_size):
     x_norm = np.linspace(-5, 5, 1000)
     mu = N / 2
     sigma = np.sqrt(N / 12)
-    y_norm = common.nomal(x_norm, mu=mu, sigma=sigma)
+    y_norm = utils.normal(x_norm, mu=mu, sigma=sigma)
 
     plt.hist(x_sums, bins="auto", density=True)
     plt.plot(x_norm, y_norm)

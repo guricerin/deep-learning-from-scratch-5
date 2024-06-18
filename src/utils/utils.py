@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def nomal(x, mu=0, sigma=1):
+def normal(x, mu=0, sigma=1):
     """
     正規分布の確率密度関数
     平均が0, 標準偏差が1の正規分布は標準正規分布と呼ばれる
