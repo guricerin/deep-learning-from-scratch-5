@@ -20,6 +20,13 @@ fit = "python src/step02/fit.py"
 generate = "python src/step02/generate.py"
 prob = "python src/step02/prob.py"
 
+numpy_basis = "python src/step03/numpy_basis.py"
+numpy_matrix = "python src/step03/numpy_matrix.py"
+plot_3d = "python src/step03/plot_3d.py"
+plot_norm = "python src/step03/plot_norm.py"
+plot_dataset = "python src/step03/plot_dataset.py"
+mle = "python src/step03/mle.py"
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
