@@ -2,7 +2,12 @@
 name = "deep-learning-from-scratch-5"
 version = "0.1.0"
 authors = [{ name = "guricerin" }]
-dependencies = ["numpy==1.24.2", "matplotlib==3.7.1", "scipy==1.10.1"]
+dependencies = [
+    "numpy==1.24.2",
+    "matplotlib==3.7.1",
+    "scipy==1.10.1",
+    "torch===2.0.0",
+]
 readme = "README.md"
 requires-python = ">= 3.8"
 
