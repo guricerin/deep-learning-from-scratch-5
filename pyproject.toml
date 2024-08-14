@@ -36,6 +36,10 @@ old_faithful = "python src/step04/old_faithful.py"
 gmm_sampling = "python src/step04/gmm_sampling.py"
 gmm = "python src/step04/gmm.py"
 
+gradient = "python src/step06/gradient.py"
+regression = "python src/step06/regression.py"
+neuralnet = "python src/step06/neuralnet.py"
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
