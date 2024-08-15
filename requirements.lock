@@ -9,6 +9,10 @@
 #   generate-hashes: false
 
 -e file:.
+certifi==2024.7.4
+    # via requests
+charset-normalizer==3.3.2
+    # via requests
 contourpy==1.2.1
     # via matplotlib
 cycler==0.12.1
@@ -17,6 +21,8 @@ filelock==3.15.4
     # via torch
 fonttools==4.53.0
     # via matplotlib
+idna==3.7
+    # via requests
 jinja2==3.1.4
     # via torch
 kiwisolver==1.4.5
@@ -34,14 +40,18 @@ numpy==1.24.2
     # via deep-learning-from-scratch-5
     # via matplotlib
     # via scipy
+    # via torchvision
 packaging==24.1
     # via matplotlib
 pillow==10.3.0
     # via matplotlib
+    # via torchvision
 pyparsing==3.1.2
     # via matplotlib
 python-dateutil==2.9.0.post0
     # via matplotlib
+requests==2.32.3
+    # via torchvision
 scipy==1.10.1
     # via deep-learning-from-scratch-5
 six==1.16.0
@@ -50,5 +60,10 @@ sympy==1.13.2
     # via torch
 torch==2.0.0
     # via deep-learning-from-scratch-5
+    # via torchvision
+torchvision==0.15.0
+    # via deep-learning-from-scratch-5
 typing-extensions==4.12.2
     # via torch
+urllib3==2.2.2
+    # via requests

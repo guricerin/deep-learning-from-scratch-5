@@ -7,6 +7,7 @@ dependencies = [
     "matplotlib==3.7.1",
     "scipy==1.10.1",
     "torch===2.0.0",
+    "torchvision===0.15.0",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
@@ -39,6 +40,7 @@ gmm = "python src/step04/gmm.py"
 gradient = "python src/step06/gradient.py"
 regression = "python src/step06/regression.py"
 neuralnet = "python src/step06/neuralnet.py"
+vision = "python src/step06/vision.py"
 
 [build-system]
 requires = ["hatchling"]
