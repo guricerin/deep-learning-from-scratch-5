@@ -2,7 +2,13 @@
 name = "deep-learning-from-scratch-5"
 version = "0.1.0"
 authors = [{ name = "guricerin" }]
-dependencies = ["numpy==1.24.2", "matplotlib==3.7.1", "scipy==1.10.1"]
+dependencies = [
+    "numpy==1.24.2",
+    "matplotlib==3.7.1",
+    "scipy==1.10.1",
+    "torch===2.0.0",
+    "torchvision===0.15.0",
+]
 readme = "README.md"
 requires-python = ">= 3.8"
 
@@ -30,6 +36,11 @@ mle = "python src/step03/mle.py"
 old_faithful = "python src/step04/old_faithful.py"
 gmm_sampling = "python src/step04/gmm_sampling.py"
 gmm = "python src/step04/gmm.py"
+
+gradient = "python src/step06/gradient.py"
+regression = "python src/step06/regression.py"
+neuralnet = "python src/step06/neuralnet.py"
+vision = "python src/step06/vision.py"
 
 [build-system]
 requires = ["hatchling"]
