@@ -13,6 +13,8 @@ class Model(nn.Module):
         self.linear2 = nn.Linear(hidden_size, output_size)
     
     def forward(self, x):
+        # 一般的なニューラルネットワークは線形変換と活性化関数（sigmoid or relu）を交互に繰り返す
+        # 今回は二層のニューラルネットワーク
         y = self.linear1(x)
         y = F.sigmoid(y)
         y = self.linear2(y)
