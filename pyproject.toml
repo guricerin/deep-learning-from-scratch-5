@@ -42,6 +42,8 @@ regression = "python src/step06/regression.py"
 neuralnet = "python src/step06/neuralnet.py"
 vision = "python src/step06/vision.py"
 
+vae = "python src/step07/vae.py"
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
