@@ -8,6 +8,9 @@ from torchvision import datasets, transforms
 
 
 class Encoder(nn.Module):
+    """
+    観測変数から潜在変数に変換する
+    """
     def __init__(self, input_dim, hidden_dim, latent_dim):
         super().__init__()
         self.linear = nn.Linear(input_dim, hidden_dim)
@@ -23,12 +26,16 @@ class Encoder(nn.Module):
         return mu, sigma
 
 class Decoder(nn.Module):
+    """
+    潜在変数から観測変数に変換する
+    """
     def __init__(self, latent_dim, hidden_dim, output_dim):
         super().__init__()
         self.linear1 = nn.Linear(latent_dim, hidden_dim)
         self.linear2 = nn.Linear(hidden_dim, output_dim)
 
     def forward(self, z):
+        # GMMにおける潜在変数は一つの離散値なのに対し、VAEにおけるそれは連続的な値を持つベクトルなので、より多様な表現が可能
         h = self.linear1(z)
         h = F.relu(h)
         h = self.linear2(h)
